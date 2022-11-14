@@ -16,3 +16,10 @@ const st =`this is a normal string`
 
 console.log(huyNew);
 console.log(st);
+
+//backticks: ``
+//cumbersome: vuong viu, tro ngai
+//assemble: tap hop
+//coercion: ep buoc
+//concatenation: noi
+//immensely: vo cung
