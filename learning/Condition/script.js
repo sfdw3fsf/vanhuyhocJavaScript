@@ -17,3 +17,6 @@ else{
     console.log('19th century')
 }
 console.log(century)
+
+//indeed: that, qua nhien
+//nutshell: tom lai
