@@ -1,6 +1,6 @@
 
 //type conversion
-const name ='huy';
+const name = 'huy';
 console.log(Number(name));
 console.log(typeof NaN);
 console.log(String(23))
@@ -8,13 +8,12 @@ console.log(String(23))
 //type coercion
 console.log("I'm a " + 20 + " years old man")
 //plus trigger coercion number->string
-console.log('22'+2)
-console.log('22'-2)
+console.log('22' + 2)
+console.log('22' - 2)
 //minus is opposite with plus string -> number
-
-
-
-
+//mutiply and divide is change all to number
+//counterintuitive: phan truc giac
 //Nan: Not a number
 //manually: thu cong
 //straightforward: thang than
+//clutter: lon xon
