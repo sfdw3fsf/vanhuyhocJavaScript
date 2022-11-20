@@ -5,8 +5,6 @@ if(2>1){
     console.log('yes')
 }
 
-console.log(`I'm ${if(2>1){
-    console.log('yes')
-}} years old`)
+console.log(`I'm ${2022-2002} years old`)
 // can put expression in template literal but 
 //statement can not
