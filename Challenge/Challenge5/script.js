@@ -20,8 +20,8 @@ const checkWinner = function (avgDolphins, avgKoalas) {
     }
 }
 
-checkWinner(avgDolphins,avgKoalas);
+checkWinner(avgDolphins, avgKoalas);
 avgDolphins = calcAverage(44, 23, 71);
 avgKoalas = calcAverage(65, 54, 49);
-checkWinner(avgDolphins,avgKoalas);
+checkWinner(avgDolphins, avgKoalas);
 //versus: dau voi
