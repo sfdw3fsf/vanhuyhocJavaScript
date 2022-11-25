@@ -24,6 +24,7 @@ john.calBMI();
 
 console.log(john.BMI);
 console.log(mark.BMI);
-console.log(`${john.BMI > mark.BMI ? `John's BMI${john.BMI} is higher than Mark's BMI(${mark.BMI}) ` : `Mark's BMI(${mark.BMI}) is higher than John's BMI(${john.BMI}) `}`);
+console.log(`${john.BMI > mark.BMI ? `John's BMI${john.BMI} is higher than Mark's BMI(${mark.BMI}) `
+  : `Mark's BMI(${mark.BMI}) is higher than John's BMI(${john.BMI}) `}`);
 
 
