@@ -41,8 +41,7 @@ const game = {
   },
 }
 //1
-const players1 = game.players[0];
-const players2 = game.players[1];
+const [players1, players2] = game.players
 //2
 const [gk, ...fieldPlayers] = [...players1];
 console.log(gk);
