@@ -44,26 +44,62 @@ const restaurant = {
     console.log(mainIngre, Ingres);
   }
 };
+/////////////////////////////////////MAP
+const infor = new Map();
+infor.set('Name', 'Italy')
+console.log(infor);
+infor.set('Time', 'summer 1983')
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set(12, 'staff')
+  .set(true, 'open')
+  .set(false, 'closed')
+console.log(infor);
+
+console.log(infor.get('categories'));
+
+
+
+
+
+
+
+
+
+
+//////////////////////////SET
+// const food = new Set(['Pizza', 'Ice cream', 'Chicken', 'Pizza']);
+// console.log(food);
+// food.add('Chocolate');
+// food.delete('Chicken');
+// // food.clear();
+// console.log(food.has('Chocolate'));
+
+// console.log(food);
+// const job = ['Doctor', 'Teacher', 'Worker', 'Worker'];
+// const uniqueJob = [...new Set(job)];
+// console.log(uniqueJob);
+// console.log(new Set([1, 2, 3, 4, 1]).size);
+
 // console.log(restaurant);
-const properties = Object.keys(restaurant.openingHours)
-// console.log(properties);
-let openStr = `We open in ${properties.length} days: `;
-for (const day of properties) {
-  openStr += `${day}, `
-}
+// const properties = Object.keys(restaurant.openingHours)
+// // console.log(properties);
+// let openStr = `We open in ${properties.length} days: `;
+// for (const day of properties) {
+//   openStr += `${day}, `
+// }
 
-console.log(openStr);
+// console.log(openStr);
 
-const oc = Object.values(restaurant.openingHours)
-console.log(oc);
+// const oc = Object.values(restaurant.openingHours)
+// console.log(oc);
 
-const workingTime = Object.entries(restaurant.openingHours);
-console.log(workingTime);
+// const workingTime = Object.entries(restaurant.openingHours);
+// console.log(workingTime);
 
-for (const [key, { open, close }] of workingTime) {
-  console.log(`On ${key} we open at ${open} and close at ${close}`);
+// for (const [key, { open, close }] of workingTime) {
+//   console.log(`On ${key} we open at ${open} and close at ${close}`);
 
-}
+// }
 
 // const days = ['mon', 'tue', 'thus', 'fri', 'sat', 'sun'];
 // for (const day of days) {
