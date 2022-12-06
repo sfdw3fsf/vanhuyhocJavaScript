@@ -44,7 +44,7 @@ const restaurant = {
     console.log(mainIngre, Ingres);
   }
 };
-/////////////////////////////////////MAP
+//////////////////MAP/////////////////////////////////////////////////////////
 const infor = new Map();
 infor.set('Name', 'Italy')
 console.log(infor);
@@ -58,15 +58,10 @@ console.log(infor);
 console.log(infor.get('categories'));
 
 
+////////////////////////////////////////////////////////////////////////////////
 
 
-
-
-
-
-
-
-//////////////////////////SET
+////////////////////SET//////////////////////////////////////////////////////////
 // const food = new Set(['Pizza', 'Ice cream', 'Chicken', 'Pizza']);
 // console.log(food);
 // food.add('Chocolate');
@@ -79,62 +74,10 @@ console.log(infor.get('categories'));
 // const uniqueJob = [...new Set(job)];
 // console.log(uniqueJob);
 // console.log(new Set([1, 2, 3, 4, 1]).size);
+///////////////////////////////////////////////////////////////////////////////////
 
-// console.log(restaurant);
-// const properties = Object.keys(restaurant.openingHours)
-// // console.log(properties);
-// let openStr = `We open in ${properties.length} days: `;
-// for (const day of properties) {
-//   openStr += `${day}, `
-// }
 
-// console.log(openStr);
-
-// const oc = Object.values(restaurant.openingHours)
-// console.log(oc);
-
-// const workingTime = Object.entries(restaurant.openingHours);
-// console.log(workingTime);
-
-// for (const [key, { open, close }] of workingTime) {
-//   console.log(`On ${key} we open at ${open} and close at ${close}`);
-
-// }
-
-// const days = ['mon', 'tue', 'thus', 'fri', 'sat', 'sun'];
-// for (const day of days) {
-//   const open = restaurant.openingHours[day];
-//   console.log(`Our restarant on ${day} open at ${open?.open ?? 'closed'}'`);
-// }
-// console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
-
-// const rest = {
-//   place: 'Hotel',
-//   room: 208,
-//   numGuest: 0
-// }
-
-// // rest.numGuest = rest.numGuest || 10;
-// // rest.numGuest ||= 10;
-// rest.numGuest ??= 10;
-// // rest.place = rest.place && 'anonymous'
-// rest.place &&= 'anonymous';
-// console.log(rest);
-
-// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]
-// console.log(menu);
-// for (const iterator of menu) console.log(iterator);
-
-// for (const iterator of menu.entries()) {
-//   console.log(iterator);
-
-// }
-
-// for (const [i, el] of menu.entries()) {
-//   console.log(`${i + 1} : ${el}`);
-
-// }
-///////////////////////////////
+///////////////////////REST////////////////////////////////////////////////////
 //spread because ... on the right side of =
 // const arr = [1, 2, 3, ...[4, 5, 6]]
 // //rest because ... on the left side of =
@@ -161,12 +104,11 @@ console.log(infor.get('categories'));
 // //Nullish : null + undefine
 // const numGuest3 = restaurant.numGuest ?? 10;
 // console.log(numGuest3);
+/////////////////////////////////////////////////////////////////////////////
 
 
+///////////////////SPREAD///////////////////////////////////////////////////
 
-
-////////////////////////////////////////////
-//SPREAD
 // const arr = [7, 8, 9];
 // const newArr = [1, 2, ...arr];
 // console.log(newArr);
@@ -185,8 +127,10 @@ console.log(infor.get('categories'));
 
 // const newRestaurant = { founder: 'Vanhuy', ...restaurant, foundedIn: 2002 };
 // console.log(newRestaurant);
+//////////////////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////
+
+//////////////////DESTRUCTURING///////////////////////////////////////////////////
 //DESTRUCTURING
 // const order1 = restaurant.orderFood({
 //   starter: 1,
@@ -246,3 +190,61 @@ console.log(infor.get('categories'));
 
 // const { fri: { open, close } } = openingHours;
 // console.log(open, close);
+///////////////////////////////////////////////////////////////////////////////////
+
+
+
+// console.log(restaurant);
+// const properties = Object.keys(restaurant.openingHours)
+// // console.log(properties);
+// let openStr = `We open in ${properties.length} days: `;
+// for (const day of properties) {
+//   openStr += `${day}, `
+// }
+
+// console.log(openStr);
+
+// const oc = Object.values(restaurant.openingHours)
+// console.log(oc);
+
+// const workingTime = Object.entries(restaurant.openingHours);
+// console.log(workingTime);
+
+// for (const [key, { open, close }] of workingTime) {
+//   console.log(`On ${key} we open at ${open} and close at ${close}`);
+
+// }
+
+// const days = ['mon', 'tue', 'thus', 'fri', 'sat', 'sun'];
+// for (const day of days) {
+//   const open = restaurant.openingHours[day];
+//   console.log(`Our restarant on ${day} open at ${open?.open ?? 'closed'}'`);
+// }
+// console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
+
+// const rest = {
+//   place: 'Hotel',
+//   room: 208,
+//   numGuest: 0
+// }
+
+// // rest.numGuest = rest.numGuest || 10;
+// // rest.numGuest ||= 10;
+// rest.numGuest ??= 10;
+// // rest.place = rest.place && 'anonymous'
+// rest.place &&= 'anonymous';
+// console.log(rest);
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu]
+// console.log(menu);
+// for (const iterator of menu) console.log(iterator);
+
+// for (const iterator of menu.entries()) {
+//   console.log(iterator);
+
+// }
+
+// for (const [i, el] of menu.entries()) {
+//   console.log(`${i + 1} : ${el}`);
+
+// }
