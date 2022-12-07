@@ -45,17 +45,47 @@ const restaurant = {
   }
 };
 //////////////////MAP/////////////////////////////////////////////////////////
-const infor = new Map();
-infor.set('Name', 'Italy')
-console.log(infor);
-infor.set('Time', 'summer 1983')
-  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
-  .set(12, 'staff')
-  .set(true, 'open')
-  .set(false, 'closed')
-console.log(infor);
 
-console.log(infor.get('categories'));
+
+const question = new Map([
+  ['question', 'Why we exist on this world?'],
+  [1, 'for fun'],
+  [2, 'no answer'],
+  [3, '...'],
+  ['correct', 1],
+  [true, 'Congrat'],
+  [false, 'try again']
+])
+console.log(question.get('question'));
+for (const [key, values] of question) {
+  if (typeof key === 'number') console.log(`Answer ${key}: ${values}`);
+}
+
+
+// const answering = Number(prompt('Your choice: '));
+// console.log(question.get(question.get('correct') === answering));
+// ;
+
+//Convert map to array
+console.log(...question);
+
+
+
+
+// const arr = [1, 2]
+// const infor = new Map();
+// infor.set('Name', 'Italy')
+// console.log(infor);
+// infor.set('Time', 'summer 1983')
+//   .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+//   .set(12, 'staff')
+//   .set(true, 'open')
+//   .set(false, 'closed')
+//   .set(arr, 'Gift')
+// // infor.delete(true)
+
+// console.log(infor);
+// console.log(infor.get(arr));
 
 
 ////////////////////////////////////////////////////////////////////////////////
