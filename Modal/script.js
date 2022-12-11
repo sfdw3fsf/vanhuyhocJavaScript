@@ -14,8 +14,11 @@ const closeModal = function () {
 }
 
 console.log(show);
+console.log(show[0]);
 
 for (let i = 0; i < show.length; i++) {
+  // console.log(show[i]);
+
   show[i].addEventListener('click', openModal)
 }
 

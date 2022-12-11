@@ -44,30 +44,135 @@ const restaurant = {
     console.log(mainIngre, Ingres);
   }
 };
+/////////////////////////WORKING WITH STRING//////////////////////////////////
+
+const annoucement = function (n) {
+  console.log(`There are ${n} planes that are waiting: ${'🛫'.repeat(n)}`);
+
+}
+annoucement(3)
+annoucement(7)
+annoucement(1)
+
+// const hideVisa = function (visa) {
+//   const str = visa + '';
+//   const lastFourDigit = str.slice(-4);
+//   console.log(str);
+//   console.log(lastFourDigit);
+//   console.log(str.length);
+
+
+//   return lastFourDigit.padStart(str.length, '+');
+
+// }
+
+// console.log(hideVisa(BigInt(123752342343242347623454)));
+
+// hideVisa('84377423472343297767678794');
+
+
+// const capitalizedName = function (name) {
+//   const namePart = name.split(' ');
+//   const arr = []
+//   for (const n of namePart) {
+//     // arr.push(n[0].toUpperCase() + n.slice(1));
+//     arr.push(n.replace(n[0], n[0].toUpperCase()));
+//   }
+//   console.log(arr.join(' '));
+
+// }
+// capitalizedName('pham Van huy');
+// capitalizedName('kita godem james');
+
+// const name = 'Van Huy'
+// const [firstName, lastName] = name.split(' ');
+// // console.log(firstName, lastName);
+// const newName = ['Mr', firstName, lastName.toUpperCase()].join(' ')
+// console.log(newName);
+
+
+
+
+// const airplane = 'Potagrum Broganim'
+// const number = 'BH543'
+// console.log(airplane.includes('Potagrum'));
+// console.log(airplane.startsWith('Pota'));
+
+// function checkBaggage(items) {
+//   const badggaged = items.toLowerCase();
+//   (badggaged.includes('gun') || badggaged.includes('knife')) ? console.log('You are not allowed to fly') : console.log('Welcome');
+// }
+// checkBaggage('In my stuff, you can find laptop and pen')
+// checkBaggage('I have Gun and Potato in my badggaged')
+// console.log(airplane.indexOf('r'));
+// console.log(airplane.lastIndexOf('r'));
+// console.log(airplane.slice('9'));
+
+// console.log(airplane.slice(9, 11));
+// console.log(airplane.slice(0, airplane.lastIndexOf(' ')));
+// console.log(airplane.slice(airplane.lastIndexOf(' ') + 1));
+// console.log(airplane.slice(-1));
+
+// const checkSeat = function (seat) {
+//   const s = seat.slice(-1);
+//   console.log(s === ('B' || 'C') ? 'Middle' : 'Normal');
+//   ;
+// }
+// checkSeat('57G');
+// checkSeat('21A');
+// checkSeat('11B');
+
+// const name = 'hUy';
+// const nameLower = name.toLowerCase();
+// console.log(nameLower);
+// console.log(name.slice(1));
+
+// const nameCorrect = name[0].toUpperCase() + nameLower.slice(1);
+// console.log(
+//   nameCorrect
+// );
+
+// const email = 'huy820op@gmail.com';
+// const loginEmail = '   HUY820oP@GmaiL.com \n'
+
+// const normalizedEmail = loginEmail.toLowerCase().trim();
+// console.log(normalizedEmail === email);
+
+// const priceEUS = "287,567£";
+// const priceUSD = priceEUS.replace('£', '$').replace(',', '.');
+// console.log(priceUSD);
+
+// const quote = 'I think the Door was locked. Door is angry'
+// console.log(quote.replaceAll('Door', 'Gate'));
+//replaceAll(/Door/g, 'gate');
+
+
+//////////////////////////////////////////////////////////////////////////////
+
 //////////////////MAP/////////////////////////////////////////////////////////
 
 
-const question = new Map([
-  ['question', 'Why we exist on this world?'],
-  [1, 'for fun'],
-  [2, 'no answer'],
-  [3, '...'],
-  ['correct', 1],
-  [true, 'Congrat'],
-  [false, 'try again']
-])
-console.log(question.get('question'));
-for (const [key, values] of question) {
-  if (typeof key === 'number') console.log(`Answer ${key}: ${values}`);
-}
+// const question = new Map([
+//   ['question', 'Why we exist on this world?'],
+//   [1, 'for fun'],
+//   [2, 'no answer'],
+//   [3, '...'],
+//   ['correct', 1],
+//   [true, 'Congrat'],
+//   [false, 'try again']
+// ])
+// console.log(question.get('question'));
+// for (const [key, values] of question) {
+//   if (typeof key === 'number') console.log(`Answer ${ key }: ${ values }`);
+// }
 
 
-// const answering = Number(prompt('Your choice: '));
-// console.log(question.get(question.get('correct') === answering));
-// ;
+// // const answering = Number(prompt('Your choice: '));
+// // console.log(question.get(question.get('correct') === answering));
+// // ;
 
-//Convert map to array
-console.log(...question);
+// //Convert map to array
+// console.log(...question);
 
 
 
@@ -227,9 +332,9 @@ console.log(...question);
 // console.log(restaurant);
 // const properties = Object.keys(restaurant.openingHours)
 // // console.log(properties);
-// let openStr = `We open in ${properties.length} days: `;
+// let openStr = `We open in ${ properties.length } days: `;
 // for (const day of properties) {
-//   openStr += `${day}, `
+//   openStr += `${ day }, `
 // }
 
 // console.log(openStr);
@@ -241,14 +346,14 @@ console.log(...question);
 // console.log(workingTime);
 
 // for (const [key, { open, close }] of workingTime) {
-//   console.log(`On ${key} we open at ${open} and close at ${close}`);
+//   console.log(`On ${ key } we open at ${ open } and close at ${ close } `);
 
 // }
 
 // const days = ['mon', 'tue', 'thus', 'fri', 'sat', 'sun'];
 // for (const day of days) {
 //   const open = restaurant.openingHours[day];
-//   console.log(`Our restarant on ${day} open at ${open?.open ?? 'closed'}'`);
+//   console.log(`Our restarant on ${ day } open at ${ open?.open ?? 'closed' } '`);
 // }
 // console.log(restaurant.order?.(0, 1) ?? 'Method does not exist');
 
