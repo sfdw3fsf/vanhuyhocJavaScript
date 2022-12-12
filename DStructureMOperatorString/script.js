@@ -19,40 +19,49 @@ const openingHours = {
     close: 24,
   },
 };
-// Data needed for first part of the section
-const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-  openingHours,
-  orderFood(starter, main) {
-    // console.log(this.starterMenu[1]);
-    return [this.starterMenu[starter], this.mainMenu[main]];
-  },
-
-  orderFood({ starter, main, time, address }) {
-    return `Order ${this.starterMenu[starter]} and
-    ${this.mainMenu[main]} will be delivered in ${time}
-    at ${address}`
-  },
-  orderPasta(ingre1, ingre2, ingre3) {
-    console.log(`Here is your order: ${ingre1}, ${ingre2},${ingre3}`);
-  },
-  orderPizza(mainIngre, ...Ingres) {
-    console.log(mainIngre, Ingres);
-  }
-};
-/////////////////////////WORKING WITH STRING//////////////////////////////////
-
-const annoucement = function (n) {
-  console.log(`There are ${n} planes that are waiting: ${'🛫'.repeat(n)}`);
+const getCode = num => num.slice(0, 3).toUpperCase();
+for (const flight of flights.split('+')) {
+  const [name, number, qr, hour] = flight.split(';');
+  console.log(`${name.startsWith('_Delayed') ? '😘' : ''}${name.replaceAll('_', ' ')} from ${getCode(number)} to ${getCode(qr)} (${hour.replace(':', 'h')})`.padStart(60));
 
 }
-annoucement(3)
-annoucement(7)
-annoucement(1)
+
+
+
+// Data needed for first part of the section
+// const restaurant = {
+//   name: 'Classico Italiano',
+//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+//   openingHours,
+//   orderFood(starter, main) {
+//     // console.log(this.starterMenu[1]);
+//     return [this.starterMenu[starter], this.mainMenu[main]];
+//   },
+
+//   orderFood({ starter, main, time, address }) {
+//     return `Order ${this.starterMenu[starter]} and
+//     ${this.mainMenu[main]} will be delivered in ${time}
+//     at ${address}`
+//   },
+//   orderPasta(ingre1, ingre2, ingre3) {
+//     console.log(`Here is your order: ${ingre1}, ${ingre2},${ingre3}`);
+//   },
+//   orderPizza(mainIngre, ...Ingres) {
+//     console.log(mainIngre, Ingres);
+//   }
+// };
+// /////////////////////////WORKING WITH STRING//////////////////////////////////
+
+// const annoucement = function (n) {
+//   console.log(`There are ${n} planes that are waiting: ${'🛫'.repeat(n)}`);
+
+// }
+// annoucement(3)
+// annoucement(7)
+// annoucement(1)
 
 // const hideVisa = function (visa) {
 //   const str = visa + '';
