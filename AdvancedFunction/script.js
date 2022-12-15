@@ -12,23 +12,48 @@ at ${time}`)
   }
 }
 
-
-const buy = document.querySelector('.buy');
-// console.log(buy);
-airplaneInfo.passenger = 200;
-airplaneInfo.increasePass = function () {
-  this.passenger++;
-  console.log(this.passenger);
+const boardPassenger = function (n, wait) {
+  const perGroup = n / 3;
+  setTimeout(function () {
+    console.log(`There are ${n} passengers`);
+    console.log(`Has ${perGroup} groups`);
+  }, 1000)
+  console.log(`We need to wait for ${wait} secconds`);
 
 }
+boardPassenger(180, 3);
+// let f;
+// const g = function () {
+//   const a = 23;
+//   f = function () {
+//     console.log(a * 2);
+//   }
+// }
+// g();
+// f();
 
-buy.addEventListener('click', airplaneInfo.increasePass.bind(airplaneInfo))
+  // const buy = document.querySelector('.buy');
+  // // console.log(buy);
+  // airplaneInfo.passenger = 200;
+  // airplaneInfo.increasePass = function () {
+  //   this.passenger++;
+  //   console.log(this.passenger);
+
+  // }
+
+  // buy.addEventListener('click', airplaneInfo.increasePass.bind(airplaneInfo))
 
 
 
 
+  //IIFE
+//   ; (function () {
+//     console.log('This only run once');
+//   })();
 
-
+// {
+//   const number = 22;
+// }
 
 
 
